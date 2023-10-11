@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.84.0">
+    <title>Portfolio</title>
+
+    <!-- Link Logo Title/Nav -->
+    <link rel="logo" href="static/Image/DT.jpeg" type="image/x-logo">
+    <link rel="icon" href="static/Image/DT.jpeg" type="image/x-icon">
+
+    <!-- Link Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@700&family=Poppins:ital,wght@1,300&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <!-- AOS Animasi -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+
+    <style>
+        * {
+            font-family: 'Figtree', sans-serif;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .link {
+            display: none;
+        }
+
+        .sini {
+            background-image: url('static/Image/bg.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .navbar {
+            background-color: skyblue;
+            position: fixed;
+            width: 100%;
+
+        }
+
+        .navbar-logo img {
+            width: auto;
+            height: 40px;
+            margin-right: 10px;
+        }
+
+        .nav-font {
+            color: black;
+        }
+
+        .Home {
+            padding-top: 50px;
+
+        }
+
+        .about {
+            padding-top: 20px;
+        }
+
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+
+        .project {
+            width: 95%;
+            max-width: 850px;
+            align-items: center;
+            justify-content: center;
+            margin: 20px auto 20px auto;
+            padding-top: 50px;
+        }
+
+        .contact {
+            width: 95%;
+            max-width: 800px;
+            margin: 130px auto 130px auto;
+            padding: 20px;
+            box-shadow: 0px 0px 3px 0px black;
+        }
+
+        .btns {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .btns>button {
+            margin-right: 10px;
+        }
+
+        .sosmed {
+            width: 100%;
+            max-width: 800px;
+            height: 50px;
+            margin: 20px auto 20px auto;
+            padding-top: 40px;
+        }
+
+        .cr {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+
+<body class="sini">
+    <!-- Start Navbar -->
+    <section id="navbar">
+        <div class="navbar">
+            <div class="container-fluid" style="background-color: skyblue;">
+                <div class="container">
+                    <header class="d-flex flex-wrap justify-content-center py-3 mb-0 border-bottom">
+                        <a href="#navbar" class="navbar-logo">
+                            <img src="static/Image/DT.jpeg" alt="Logo">
+                        </a>
+
+                        <a class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+                            <span class="fs-4 nav-font" style="font-weight:bold;">Portfolio</span>
+                        </a>
+
+                        <ul class="nav nav-pills">
+                            <li class="nav-item"><a href="#Home" class="nav-link" style="color: black;">Home</a></li>
+                            <li class="nav-item"><a href="#about" class="nav-link" style="color: black;">About</a></li>
+                            <li class="nav-item"><a href="#project" class="nav-link" style="color: black;">Projects</a>
+                            </li>
+                            <li class="nav-item"><a href="#contact" class="nav-link" style="color: black;">Contact</a>
+                            </li>
+                        </ul>
+                        <script>
+                            window.addEventListener("scroll", function () {
+                                if (window.scrollY > 100) {
+                                    navbar.style.display = "none";
+                                } else {
+                                    navbar.style.display = "block";
+                                }
+                            });
+                        </script>
+                </div>
+                </header>
+            </div>
+        </div>
+    </section>
+    <!-- End Navbar -->
+
+
+    <!-- Halaman Home -->
+    <section id="Home">
+        <div class="Home">
+            <div class="container-fluid">
+                <div class="container col-xxl-8 px-4 py-5">
+                    <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+                        <div class="col-10 col-sm-8 col-lg-6" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+                            <img style="border-radius:100px;" src="static/Image/Danss.jpeg"
+                                class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500"
+                                loading="lazy">
+                        </div>
+                        <div class="col-lg-6" data-aos="fade-right" data-aos-duration="1000">
+                            <h1 class="display-5 fw-bold lh-1 mb-3">Mochamad Rizky Septian R</h1>
+                            <p class="lead">Mahasiswa semester 5 - Sistem Informasi</p>
+                            <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                                <button type="button" class="btn btn-outline-dark" id="about">Visit My
+                                    Works</button>
+                                <script>
+                                    document.getElementById("about").addEventListener("click", function () {
+                                        var aboutSection = document.getElementById("about");
+                                        if (aboutSection) {
+                                            aboutSection.scrollIntoView({ behavior: "smooth" });
+                                        }
+                                    });
+                                </script>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <!-- End halaman home -->
+
+
+    <!-- Start about -->
+    <section id="about">
+        <div class="about" data-aos="fade-up" data-aos-duration="2000" data-aos-offset="200">
+            <div class="px-4 pt-5 my-5 text-center border-bottom">
+                <h6 style="color: gray;">Who Am I ?</h6>
+                <h1 class="display-4 fw-bold">About Me</h1>
+                <div class="col-lg-6 mx-auto">
+                    <p class="lead mb-4">Nama saya Mochamad Rizky Septian R dari STMIK Jabar kota Bandung. Hobi saya
+                        bermain
+                        musik dan futsal. Prinsip dalam hidup saya tanggungjawab, disiplin dan jujur karena ketiga
+                        prinsip
+                        ini sangat berpengaruh bagi saya.
+                    </p>
+                </div>
+            </div>
+    </section>
+    <!-- End About -->
+
+
+    <!-- Start Project/Pengalaman -->
+    <section id="project">
+        <div class="project">
+            <div class="b-example-divider">
+                <div class="container px-4 py-5" id="project">
+                    <h6 class="text-center" style="color: gray;">Who I Am Great At ?</h6>
+                    <h1 class="text-center">Experience</h1>
+                    <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+                        <div class="col d-flex align-items-start" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                            <div class="icon-square text-dark flex-shrink-0 me-3">
+                                <h2><i class="bi bi-xbox"></i> Futsal </h2>
+                            </div>
+                        </div>
+                        <div class="col d-flex align-items-start" data-aos="fade-up" data-aos-anchor-placement="top-center">
+                            <div class="icon-square text-dark flex-shrink-0 me-3">
+                                <h2><i class="bi bi-music-player"></i> Band</h2>
+                            </div>
+                        </div>
+                        <div class="col d-flex align-items-start" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-delay="200">
+                            <div class="icon-square text-dark flex-shrink-0 me-3">
+                                <h2><i class="bi bi-cup-hot-fill"></i> Barista</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    </section>
+    <!-- End Project/Pengalaman -->
+
+
+    <!-- Start Contact -->
+    <section id="contact">
+        <div class="contact" data-aos="zoom-in" data-aos-offset="350">
+            <h6 class="text-center" style="color: gray;">How Can You Communicate ?</h6>
+            <h1 class="text-center mb-5">Contact Me</h1>
+            <div class="alert alert-success alert-dismissible fade show d-none my-alert" role="alert">
+                <strong>Terimakasih!</strong> Pesan anda sudah terkirim.
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+            <form name="contact-form">
+                <div class="row g-3">
+                    <div class="col">
+                        <input name="nama" type="text" class="form-control" placeholder="Your Name"
+                            aria-label="Your Name">
+                    </div>
+                    <div class="col">
+                        <input name="email" type="text" class="form-control" placeholder="Enter Email"
+                            aria-label="Enter Email">
+                    </div>
+                    <div class="form-floating">
+                        <textarea name="pesan" class="form-control" placeholder="Leave a comment here"
+                            id="floatingTextarea2" style="height: 100px"></textarea>
+                        <label for="floatingTextarea2" style="color:grey;"> Write Message</label>
+                    </div>
+                    <div class="btns">
+                        <button type="submit" class="btn btn-outline-dark btn-kirim">Send
+                            Message</button>
+                        <button class="btn btn-outline-dark btn-loading d-none" type="button" disabled>
+                            <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                            Loading...
+                        </button>
+            </form>
+            <script>
+                const scriptURL = 'https://script.google.com/macros/s/AKfycbwUXJOfnXekplIqg60h0wnEj273HwUIo3_Gb2l5Uf552dvoBu0sr0H-uBzuJNQzknNExQ/exec'
+                const form = document.forms['contact-form'];
+                const btnKirim = document.querySelector ('.btn-kirim');
+                const btnLoading = document.querySelector ('.btn-loading');
+                const myAlert = document.querySelector ('.my-alert');
+
+                form.addEventListener('submit', e => {
+                    e.preventDefault();
+
+                    // tampilkan tombol loading, hilangkan tombol kirim
+                    btnLoading.classList.toggle('d-none');
+                    btnKirim.classList.toggle('d-none');
+
+                    fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                        .then(response => {
+                            // tampilkan tombol kirim, hilangkan tombol loading
+                            btnLoading.classList.toggle('d-none');
+                            btnKirim.classList.toggle('d-none');
+
+                            // tampilkan alert
+                            myAlert.classList.toggle('d-none');
+
+                            // reset form
+                            form.reset();
+
+                            console.log('Success!', response)})
+                        .catch(error => console.error('Error!', error.message))
+                })
+            </script>
+        </div>
+        </div>
+        </div>
+    </section>
+    <!-- End Contact -->
+
+
+    <footer class="text-center text-white" style="background-color: skyblue;">
+        <div class="container px-4">
+            <!-- Section: Social media -->
+            <section class="mb-4">
+                <div class="sosmed">
+                    <!-- Facebook -->
+                    <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+                        data-mdb-ripple-color="dark"><i class="fab fa-facebook-f"></i></a>
+
+                    <!-- Twitter -->
+                    <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+                        data-mdb-ripple-color="dark"><i class="fab fa-twitter"></i></a>
+
+                    <!-- Google -->
+                    <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+                        data-mdb-ripple-color="dark"><i class="fab fa-google"></i></a>
+
+                    <!-- Instagram -->
+                    <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+                        data-mdb-ripple-color="dark"><i class="fab fa-instagram"></i></a>
+
+                    <!-- Github -->
+                    <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="https://github.com/Danss0" role="button"
+                        data-mdb-ripple-color="dark"><i class="fab fa-github"></i></a>
+                </div>
+            </section>
+            <!-- Section: Social media -->
+
+
+        <!-- Copyright -->
+        <div class="cr">
+            <div class="text-center text-dark p-3" style="background-color: skyblue;">
+                <a href="#Home">
+                    <img src="static/Image/DT.jpeg" role="button" width="40px" height="auto">
+                </a>© 2023 Copyright
+                <a class="text-dark" href="https://github.com/Danss0">Danss0.io</a>
+            </div>
+            <!-- Copyright -->
+    </footer>
+    </div>
+
+    <!-- script AOS Animasi -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+</body>
+</html>
